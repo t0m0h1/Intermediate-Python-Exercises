@@ -1,14 +1,4 @@
 def greatest_common_divisor(n1, n2):
-    """
-    Calculates the greatest common divisor (GCD) of two numbers.
-
-    Parameters:
-    n1 (int): The first number.
-    n2 (int): The second number.
-
-    Returns:
-    int: The GCD of n1 and n2.
-    """
 
     # Euclidean algorithm to find GCD
     while n2 != 0:
@@ -21,17 +11,6 @@ def greatest_common_divisor(n1, n2):
 
 
 def lowest_common_multiple(n1, n2):
-    """
-    Calculates the lowest common multiple (LCM) of two numbers.
-
-    Parameters:
-    n1 (int): The first number.
-    n2 (int): The second number.
-
-    Returns:
-    int: The LCM of n1 and n2.
-    """
-
 
     # LCM of two numbers is the product of the two numbers divided by their GCD
     return n1 * n2 // greatest_common_divisor(n1, n2)
