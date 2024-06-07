@@ -35,5 +35,5 @@ def shortest_substring(s: str) -> int:
 if __name__ == '__main__':
     print(longest_substring("abcabcbb")) # 3
     print(longest_substring("bbbbb")) # 1
-    print(longest_substring("abcdefghijklmnopqrstwxyz")) # 26
+    print(longest_substring("pwwkew")) # 3
     print(shortest_substring("abcabcbb")) # 3
