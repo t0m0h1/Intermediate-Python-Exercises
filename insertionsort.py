@@ -20,7 +20,7 @@ if __name__ == '__main__':
     print(insertion_sort([31, 41, 59, 26, 41, 58])) # [26, 31, 41, 41, 58, 59]
 
 
-# Time complexity: O(n^2) which is 
+# Time complexity: O(n^2) which is the worst case scenario
 # Space complexity: O(1)
 
 
