@@ -1,7 +1,8 @@
 from typing import List
 import random
+import timeit
 
-def insertion_sort(A: List[int]) -> List:
+def insertion_sort(A: List[int]) -> List[int]:
     n = len(A)
     i = 1
     while i < n:
@@ -12,19 +13,16 @@ def insertion_sort(A: List[int]) -> List:
             j -= 1
         A[j+1] = current
         i += 1
-
     return A
     
-numbers = [random.randint(0, 1000) for i in range(1000)]
+numbers = [random.randint(0, 2000) for _ in range(2000)]
 
-# driver code
+def rounded():
+    return round(timeit.timeit(lambda: insertion_sort(numbers), number=1), 4)
+
 if __name__ == '__main__':
-    print(insertion_sort([5, 2, 4, 6, 1, 3])) # [1, 2, 3, 4, 5, 6]  
-    print(insertion_sort([31, 41, 59, 26, 41, 58])) # [26, 31, 41, 41, 58, 59]
-    print(insertion_sort(numbers))
+    print(insertion_sort([5, 2, 4, 6, 1, 3]))
+    print(rounded())
 
-# Time complexity: O(n^2) which is the worst case scenario
-# Space complexity: O(1)
-
-
-
+# time complexity: O(n^2)
+# space complexity: O(1)
