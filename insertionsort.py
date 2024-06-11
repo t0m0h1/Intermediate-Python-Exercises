@@ -22,7 +22,8 @@ def rounded():
 
 if __name__ == '__main__':
     print(insertion_sort([5, 2, 4, 6, 1, 3]))
-    print(rounded())
+    print(insertion_sort(numbers), '\n')
+    print(f'Time Taken: {rounded()} seconds')
 
 # time complexity: O(n^2)
 # space complexity: O(1)
