@@ -18,7 +18,7 @@ def stock(prices: List[int]) -> int:
     return max_profit
 
 # Test case
-prices = [7, 1, 5, 3, 6, 4]
+prices = [7, 1, 5, 3, 6, 4, 8]
 
 if __name__ == '__main__':
     print(stock(prices))  # Output should be 5
